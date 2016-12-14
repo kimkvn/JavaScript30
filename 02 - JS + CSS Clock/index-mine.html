@@ -70,7 +70,17 @@
   </style>
 
   <script>
+  function setDate(){
+    const now = new Date();
+    const seconds = now.getSeconds();
+    //turn seconds into something base100
+    //dividing by 60 returns percentage
+    //multiply by 360 will give degrees value
+    const secondsDegrees = ((seconds / 60) * 360);
+    console.log(seconds);
+  }
 
+  setInterval(setDate, 1000);
 
   </script>
 </body>
