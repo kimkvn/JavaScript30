@@ -79,7 +79,7 @@
     //turn seconds into something base100
     //dividing by 60 returns percentage
     //multiply by 360 will give degrees value
-    const secondsDegrees = ((seconds / 60) * 360);
+    const secondsDegrees = ((seconds / 60) * 360) + 90;
     secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
     console.log(seconds);
   }
